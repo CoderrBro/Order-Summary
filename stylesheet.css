@@ -1,0 +1,198 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* Instructions Color Plate */
+:root {
+  --PaleBlue: hsl(225, 100%, 94%);
+  --BrightBlue: hsl(245, 75%, 52%);
+  --VeryPaleBlue: hsl(225, 100%, 98%);
+  --DesaturatedBlue: hsl(224, 23%, 55%);
+  --DarkBlue: hsl(223, 47%, 23%);
+  --PraimaryFont: "Red Hat Display", sans-serif;
+}
+
+/* Universal Design */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* Body Designing */
+
+body {
+  background: url(images/pattern-background-desktop.svg), var(--PaleBlue);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-family: var(--PraimaryFont);
+  margin-top: 110px;
+}
+
+/* Main Designin Area Start */
+
+/* Hero Images Area */
+.container {
+  width: 400px;
+}
+
+.container .main-image img {
+  max-width: 100%;
+  border-radius: 15px 15px 0 0;
+  display: flex;
+}
+
+/* Content Area Here */
+.container .content {
+  background-color: #fff;
+  padding: 30px;
+  text-align: center;
+  border-radius: 0 0 15px 15px;
+}
+
+.content h2 {
+  color: var(--DarkBlue);
+  font-size: 24px;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  font-weight: 900;
+}
+
+.content .first {
+  color: var(--DesaturatedBlue);
+  line-height: 1.5em;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Plan Box Design */
+.plan-box {
+  width: 100%;
+  background-color: var(--VeryPaleBlue);
+  display: flex;
+  flex-direction: row;
+  padding: 25px 15px;
+}
+
+.plan-content {
+  flex-basis: 50%;
+}
+
+.link {
+  flex-basis: 50%;
+  position: relative;
+  top: 15px;
+  left: 35px;
+  color: var(--BrightBlue);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.link a:hover {
+  color: var(--DesaturatedBlue);
+  text-decoration: none;
+}
+
+.plan-content .second {
+  font-weight: 900;
+  padding-bottom: 2px;
+  font-family: var(--PraimaryFont);
+  color: var(--DarkBlue);
+}
+
+.plan-content span {
+  color: var(--DesaturatedBlue);
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 15px;
+  font-family: var(--PraimaryFont);
+}
+
+.payment {
+  display: block;
+  margin: auto;
+  background-color: var(--BrightBlue);
+  border: none;
+  width: 100%;
+  padding: 13px 0;
+  border-radius: 15px;
+  color: #fff;
+  font-family: var(--PraimaryFont);
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 1px;
+  margin: 25px 0 20px 0;
+  transition: 0.2s;
+}
+
+.payment:hover {
+  opacity: 0.8;
+}
+
+.Cancel {
+  text-decoration: none;
+  font-size: 15px;
+  color: var(--DesaturatedBlue);
+  font-weight: 700;
+}
+
+.Cancel:hover {
+  color: var(--DarkBlue);
+
+}
+
+/* Copyright Section design */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 20px 0 100px 0;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+.name:hover {
+  font-weight: 800;
+}
+
+/* Responsive Are here */
+@media all and (max-width: 550px) {
+  body {
+    background: url(images/pattern-background-mobile.svg), var(--VeryPaleBlue);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 130px;
+  }
+
+  .container {
+    width: 350px;
+  }
+
+  .content .first {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+
+  .container .content {
+    padding: 25px;
+  }
+
+  .plan-box {
+    padding: 15px 10px;
+  }
+}
